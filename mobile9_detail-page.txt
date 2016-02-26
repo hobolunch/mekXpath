@@ -1,0 +1,25 @@
+mobile9
+<app_title = ".//*[@id='content']/div[1]/div[7]/h1">
+
+<app_icon_url = ".//*[@id='content']/div[1]/div[7]/div[2]/div[1]/div[1]/div[1]/img/@src">
+
+<importer_name = "".//*[@id='content']/div[1]/div[7]/div[2]/div[1]/div[1]/div[2]/p[2]/a/text()|
+			.//*[@id='content']/div[1]/div[7]/div[2]/div[1]/div[1]/div[2]/p[2]/text()|
+				.//*[@id='content']/div[1]/div[7]/div[3]/div[3]/div/div[1]/a/text()">
+
+<developer_name = ".//*[@id='gallery-wrapper']/div[1]/div[2]/p[1]/text()|
+			.//*[@id='content']/div[1]/div[7]/div[2]/div[1]/div[1]/div[2]/p[1]/text()">
+
+
+# This is pointing at all of the "full" stars, out of 5.  If you can provide a count of the nodes you can pull the rating.
+<app_rating = ".//*[@id='gallery-wrapper']/div[1]/div[2]/div[1]/span[@class='star star-f']">
+
+
+
+<app_description = ".//*[@id='desc_show_part']/text()">
+
+<app_ss_1 = ".//*[@id='content']/div[1]/div[7]/div[2]/div[2]/img[1]/@src">
+
+<app_ss_2 = ".//*[@id='content']/div[1]/div[7]/div[2]/div[2]/img[2]/@src">
+
+<app_ss_3 = ".//*[@id='content']/div[1]/div[7]/div[2]/div[2]/img[3]/@src">
