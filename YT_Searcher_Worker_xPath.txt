@@ -1,0 +1,44 @@
+SEARCHER URL:
+https://www.youtube.com/results?search_query=install+custom+apple+watch+faces
+
+Link to Video Container Each Page:
+//div[@id='results']/ol/li[2]/ol/*/div/div/div[2]
+
+Link to Thumbnail of Video:
+//div[@id='results']/ol/li[2]/ol/*/div/div/div[1]/a/div[1]/span/img/@src
+
+Link to URL of Video, will require some concatination (href="/watch?v=p1I6Ohe52oI")
+//div[@id='results']/ol/li[2]/ol/*/div/div/div[2]/h3/a/@href
+
+
+Link to User information
+//div[@id='results']/ol/li[2]/ol/*/div/div/div[2]/div[1]
+
+Link to Title of Video
+//div[@id='results']/ol/li[2]/ol/*/div/div/div[2]/h3[@class]/a/text()
+
+
+WORKER URL
+https://www.youtube.com/watch?v=p1I6Ohe52oI
+
+
+Description of Channel:
+.//*[@id='eow-description']
+
+Category of Channel
+.//*[@id='watch-description-extras']/ul/li[1]/ul/li/a/text()
+
+# of Comments (Might require some trimming, contains 3 nodes with 2 being white-space)
+.//*[@id='comment-section-renderer']/h2/text()
+
+# Framework for All Comments
+.//*[@id='comment-section-renderer-items']/section
+
+# Text of First Comment
+.//*[@id='comment-section-renderer-items']/section[1]/div[1]/div[2]/div[2]/div[1]/text()
+
+# Text from Second Comment, its the "section" that Changes
+.//*[@id='comment-section-renderer-items']/section[2]/div[1]/div[2]/div[2]/div[1]/text()
+
+# All Text From all Comments:
+.//*[@id='comment-section-renderer-items']/section[*]/div[1]/div[2]/div[2]/div[1]/text()
