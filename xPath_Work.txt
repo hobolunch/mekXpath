@@ -1,0 +1,119 @@
+NODES: Description
+#1Mobile
+//div[@class='mt30 bb']/div[2]/div[2]/div/div/text()
+
+#GooglePlay
+//div[@class='details-section description simple contains-text-link apps-secondary-color']/div[1]/div[1]/div/div[1]/p/text()
+//div[@itemprop='description']/div/text()|//div[@itemprop='description']/div/p/text()
+
+#Amazon
+//div[@id='mas-product-description']/div/text()
+
+#Windows
+//p[@class='content m-b-n has-newline srv_description srv_microdata']/text()
+
+#iTunes
+//div[@class='product-review']/p/text()
+
+#25PP (iOS)
+//*[@id='introCont']/div[2]/p/text()
+
+#25PP (Android)
+.//*[@id='wrapper']/div[2]/div/div[2]/div[2]/div/text()
+.//*[@id='wrapper']/div[2]/div/div[2]/div[2]/div/p/text()
+
+#WANDOUJIA
+//div[@class='container']/div[2]/div[2]/div[1]/div[2]/div/text()
+
+
+
+#APPCHINA (iOS)
+html/body/div[3]/div[2]/div[1]/p[1]/text()
+
+#APPCHINA (Android)
+html/body/div[4]/div[2]/div[1]/p[1]/text()
+
+#360Mobile (Lendian)
+.//*[@id='J-brief']/text()
+
+
+
+
+
+
+
+
+
+NODES: Publisher
+#APPCHINA (iOS)
+html/body/div[3]/div[2]/div[2]/div[1]/p/b/text()
+
+#APPCHINA (Android)
+html/body/div[4]/div[2]/div[2]/div[1]/p[4]/b/text()
+
+
+#360Mobile (Lendian)
+.//*[@id='bd']/div[2]/div[1]/div[2]/div[2]/div[1]/div[2]/ul/li[6]/text()
+
+#Wandoujia
+.//*[@class='origin-data']/text()
+
+
+	
+NODES: Category
+#Amazon
+//div[@id='wayfinding-breadcrumbs_feature_div']/ul/li[3]/span/a/text()
+
+#1Mobile
+//div/p[@class='a_b_cate']/strong/a/text()
+
+
+#Windows
+//*[@id='app-details']/dl/dd[2]/div/text()
+
+#iTunes
+.//*[@id='left-stack']/div[1]/ul/li[2]/a/span/text()
+
+#GooglePlay
+//a[@class='document-subtitle category']/span/text()
+
+#AppChina (iOS)
+html/body/div[2]/a[3]/text()
+
+#AppChina (Android)
+html/body/div[3]/a[3]/text()
+
+#360Mobile (Lendian)
+.//*[@id='bd']/div[2]/div[1]/div[2]/div[2]/div[1]/div[2]/ul/li[5]/text()
+
+
+25PP(Android)
+.//*[@id='wrapper']/div[2]/div/div[1]/div[2]/ul/li[2]/text()
+
+25PP (iOS)
+.//*[@id='wrapper']/div[2]/div/div[1]/div[2]/ul/li[2]/text()
+
+
+
+NODE: App Icon URL
+#iTunes
+.//*[@id='left-stack']/div[1]/a[1]/div/img/@src-swap
+
+#1Mobile
+//div[@class='main']/div[2]/img/@data-original
+
+#Amazon
+.//*[@id='js-masrw-main-image']/@src
+
+#GooglePlay
+//*[@class='cover-container']/img/@src
+
+#Windows
+
+
+
+NODE: Downloads
+#25PP(iOS)
+.//*[@id='wrapper']/div[2]/div/div[1]/div[2]/div/ul/li[1]/span/text()
+
+//div[@class='pull-left ph-logo m-r-md']/img/@src
